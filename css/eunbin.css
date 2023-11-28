@@ -1,0 +1,86 @@
+@charset "utf-8";
+
+@font-face{
+  font-family: 'Hahmlet', serif;
+  src: url(../font/Hahmlet-Regular.ttf) format('truetype');
+  font-family: 'Noto Sans KR', sans-serif;
+  src: url(../font/NotoSansKR-Regular.ttf) format('truetype');
+  font-family: 'Orbit', sans-serif;
+  src: url(../font/Orbit-Regular.ttf) format('truetype');
+  font-family: 'Roboto', sans-serif;
+  src: url(../font/Roboto-Regular.ttf) format('truetype');
+  font-family: 'Young Serif', serif;
+  src: url(../font/YoungSerif-Regular.ttf) format('truetype');
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+
+}
+ul, li{
+  list-style: none;
+}
+a{ 
+  text-decoration: none;
+  color: #333;
+}
+.wrap{}
+/* 헤더 */
+.list {
+  position: fixed;
+  width: 100%;
+  top: 0; left: 0;
+  z-index: 99;
+  padding: 10px 0;
+  /* background: rgba(0,0,0,.2); */
+}
+.list .list-wrap{
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.list-wrap .logo{
+  flex-basis: 20%;
+}
+.list-wrap .logo a{}
+.list-wrap .logo a img{
+  width: 30%;
+}
+.list-wrap .nav{
+  flex-basis: 60%;
+}
+.list-wrap .nav ul{
+  display: flex;
+  justify-content: space-between;
+}
+.list-wrap .nav ul li.on{
+  font-weight: bold;
+}
+.list-wrap .nav ul li a{
+  font-family: 'Roboto', sans-serif;
+}
+.list-wrap .nav ul li.on a{
+  text-decoration: underline;
+}
+
+/* 푸터 */
+.footer{
+  width: 100%;
+  padding: 25px 0;
+  /* background-color: #fff; */
+  position: relative;
+  bottom: 0;
+}
+.footer p{
+  text-align: center;
+  letter-spacing: -1px;
+  color: #999;
+  font-family: 'Roboto', sans-serif;
+}

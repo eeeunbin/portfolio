@@ -1,0 +1,231 @@
+@charset "utf-8";
+
+@font-face{
+  font-family: 'Hahmlet', serif;
+  src: url(../font/Hahmlet-Regular.ttf) format('truetype');
+  font-family: 'Noto Sans KR', sans-serif;
+  src: url(../font/NotoSansKR-Regular.ttf) format('truetype');
+  font-family: 'Orbit', sans-serif;
+  src: url(../font/Orbit-Regular.ttf) format('truetype');
+  font-family: 'Roboto', sans-serif;
+  src: url(../font/Roboto-Regular.ttf) format('truetype');
+  font-family: 'Young Serif', serif;
+  src: url(../font/YoungSerif-Regular.ttf) format('truetype');
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background: linear-gradient(to top, #000 0%, #fff 100%) no-repeat;
+}
+ul, li{
+  list-style: none;
+}
+a{ 
+  text-decoration: none;
+  color: #333;
+}
+
+
+/* about */
+.about{
+  
+}
+.about .container{
+  max-width: 1200px;
+  width: 100%;
+  margin: 8% auto;
+  margin-bottom: 0;
+}
+.about .about-wrap{
+  font-family: 'Orbit', sans-serif;
+}
+.about .about-wrap h2,h3{
+  font-family: 'Young Serif', serif;
+}
+.about .about-wrap .profile{
+  display: flex;
+  justify-content: center;
+  gap: 20%;
+  margin: 50px auto;
+}
+.about .about-wrap .profile .img-wrap{
+  flex-basis: 40%;
+}
+.about .about-wrap .profile .img-wrap img{
+  width: 100%;
+  
+}
+.about .about-wrap .profile .text{
+  flex-basis: 60%;
+  font-weight: 700;
+  /* text-align: center; */
+}
+.about .about-wrap .profile .text .text-wrap{
+  position: relative;
+  margin-bottom: 10%;
+}
+.about .about-wrap .profile .text h3{
+  padding: 20px 0;
+}
+.about .about-wrap .profile .text p{
+  line-height: 30px;
+}
+.about .about-wrap .profile .text .text-wrap a{
+  position: absolute;
+  right: 5%; bottom: -25%;
+  padding: 7px;
+  background-color: #999;
+  border-radius: 10px;
+  line-height: 23px;
+}
+.about .about-wrap .profile .text .text-wrap a:hover{
+  color: #999;
+  background-color: #333;
+  transition-duration: .3s;
+}
+/* progress */
+.about-wrap .skills{
+  width: 100%;
+  margin-top: 5%;
+}
+.about-wrap .skills h3{
+}
+.about-wrap .skills .sk-icon{
+  /* display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 5%; */
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(5,2fr);
+  column-gap: 10%;
+  row-gap: 40%;
+}
+#ae{
+}
+#pr{
+  grid-column: 3/4;
+}
+#ps{
+  grid-column: 5/6;
+}
+#ai{
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+#c4{
+  grid-column: 4/5;
+  grid-row: 2/3;
+}
+.about-wrap .skills .sk-icon .progress{
+  /* flex-basis: 7%;
+  margin-bottom: 50px; */
+  position: relative;
+  width: 100%;
+}
+.about-wrap .skills .sk-icon .progress .progressbar-text {
+  position: absolute;
+  top: 165% !important;
+}
+.about-wrap .skills .progress img{
+  width: 85%;
+  border-radius: 50px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+.about-wrap .skills .sk-icon .progress p{
+  position: absolute;
+  bottom: -50%; left: 50%;
+  transform: translate(-50%,0);
+}
+.about-wrap .skills .sk-icon .progress .setText{
+  position: absolute;
+  bottom: -50%; left: 50%;
+  transform: translate(-50%,0);
+}
+.about-wrap .interview .container{
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.about-wrap .interview .container h3{
+  margin: 5%;
+}
+.about-wrap .interview .container .interview-video{
+  margin: 0 auto;
+}
+.about-wrap .interview .container .interview-video img{
+  outline: -10px;
+  outline-color: white;
+  outline-offset: -11px;
+  outline-width: 2px;
+  outline-style: solid;
+}
+.about-wrap .interview .container p{
+  color: #fff;
+  margin: 5% auto;
+  font-size: 20px;
+}
+
+.footer{
+  
+}
+
+/* === Modal === */
+.modal{
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* width: 100%; */
+  /* height: 100%; */
+  z-index: 999;
+}
+.modal.show{display: block;}
+.modal .dim{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #fffdf5ce;
+}
+.modal .dim::after{
+  content: 'X';
+  background-color: #99bcdd;
+  color: #1e5670;
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 15px 20px;
+  cursor: pointer;
+}
+.modal .item_box{
+  position: relative;
+  z-index: 999;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 1200px;
+  height: 630px;
+  border: 5px solid;
+}
+.modal .item_box iframe{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

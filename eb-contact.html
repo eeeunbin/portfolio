@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>eunbin about</title>
+  <!-- 메뉴바 css -->
+  <link rel="stylesheet" href="css/eunbin.css">
+  <!-- contact css -->
+  <link rel="stylesheet" href="css/eb-contact.css">
+  <!-- contact js -->
+  <script src="js/eb-about.js"></script>
+  <!-- style -->
+  <style>
+  @import url('https://fonts.googleapis.com/css2?family=Orbit&family=Roboto:wght@100;300;400;500;700;900&family=Young+Serif&display=swap');
+  </style>
+</head>
+<body>
+  <header class="list">
+    <div class="list-wrap">
+      <h1 class="logo">
+        <a href="index.html">
+          <img src="img/로고4.png" alt="로고">
+        </a>
+      </h1>
+      <nav class="nav">
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="eb-about.html">ABOUT</a></li>
+          <li><a href="eb-portfolio.html">PORTFOLIO</a></li>
+          <li class="on"><a href="eb-contact.html">CONTACT</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <section class="contact">
+    <div class="container">
+    <h2>contact</h2>
+    <div class="contact-wrap">
+      <div class="sns">
+        <ul>
+          <li class="card">
+            <div class="content">
+              <a href="#">
+                <p>010.7221.5896</p>
+              </a>
+            </div>
+          </li>
+          <li class="card">
+            <div class="content">
+              <a href="#">
+                <p>ckdmsqls5896@naver.com</p>
+              </a>
+            </div>
+          </li>
+          <li class="card">
+            <div class="content">
+              <a href="#">
+                <p>ceb0229</p>
+              </a>
+            </div>
+          </li>
+          <li class="card">
+            <div class="content">
+              <a href="#">
+                <p>차은빈</p>
+              </a>
+            </div>
+          </li>
+          <li class="card">
+            <div class="content">
+              <a href="#">
+                <p>@abcd1234</p>
+              </a>
+            </div>
+          </li>
+          <li class="card">
+            <div class="content">
+              <a href="#">
+                <p>@유튜브계정</p>
+              </a>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="text">
+        <p>지금까지 제 작품을 봐주셔서 감사합니다. <br> Thank you for watching my work so far</p>
+      </div>
+    </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <p>Copyright 2023 . EUNBINCHA . All right reserved.</p>
+  </footer>
+  <!-- vanilla-tilt.JS -->
+  <script src="js/vanilla-tilt.min.js"></script>
+  <script>
+    VanillaTilt.init(document.querySelectorAll(".card"),{
+      max: 15,
+      speed: 7000,
+      glare: true,
+      "max-glare":1,
+  })
+  </script>
+</body>
+</html>
